@@ -3,6 +3,7 @@
   "version": "0.0.40",
   "description": "React Native for Web",
   "main": "dist/index.js",
+  "private": true,
   "files": [
     "dist"
   ],
@@ -23,7 +24,7 @@
     "fbjs": "^0.8.1",
     "inline-style-prefixer": "^2.0.0",
     "lodash": "^4.13.1",
-    "react-dom": "^15.1.0",
+    "react-dom": "15.2.0",
     "react-textarea-autosize": "^4.0.2",
     "react-timer-mixin": "^0.13.3"
   },
