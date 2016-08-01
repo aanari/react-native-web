@@ -33,7 +33,9 @@ class StyleSheetValidation {
   static validateStyle(name, styles) {
     if (process.env.NODE_ENV !== 'production') {
       for (const prop in styles[name]) {
-        StyleSheetValidation.validateStyleProp(prop, styles[name], 'StyleSheet ' + name)
+        if (prop != 'elevation' && prop != 'textDecorationColor') {
+          StyleSheetValidation.validateStyleProp(prop, styles[name], 'StyleSheet ' + name)
+        }
       }
     }
   }

@@ -33,7 +33,9 @@ styleError(error.message,style,caller);
 name,styles){
 if(process.env.NODE_ENV!=='production'){
 for(var prop in styles[name]){
+if(prop!='elevation'&&prop!='textDecorationColor'){
 StyleSheetValidation.validateStyleProp(prop,styles[name],'StyleSheet '+name);
+}
 }
 }
 }},{key:'addValidStylePropTypes',value:function addValidStylePropTypes(
